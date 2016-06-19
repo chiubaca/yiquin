@@ -24,11 +24,15 @@
     <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
     <!--CUSTOM STYLE -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <!--Animate STYLE -->
+    <link href="assets/css/animate.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+   
+
 </head>
 
 <body>
@@ -49,7 +53,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#header-section">HOME</a></li>
                     <li><a href="#about-section">WHO WE ARE</a></li>
-                    <li><a href="#products-section">GALLERY</a></li>
+                    <li><a href="#gallery-section">GALLERY</a></li>
                     <li><a href="#contact-section">CONTACT</a></li>
                 </ul>
             </div>
@@ -63,13 +67,17 @@
         <div class="container">
             <div class="row centered">
                 <div class="col-md-8 col-md-offset-2">
-                    <!---<h1><strong> We Are Yi Quin</strong> -->         
-                     
-                    </h1>
+                    
+                    <div style="padding-top: 80%" class="animated fadeIn">
+                      </h1>
                      <br /> <br /> <br />
-                    <h2 style="padding-top: 75%" > Lion Dancing &amp; Martial Arts </h2>
-                     <br />
-                  <a href="#about-section">  <i class="fa fa-angle-double-down fa-5x down-icon"></i> </a>
+                      <h2 style=" text-shadow: 2px 2px #ada2a2;font-size: 250%  "> <strong>LION DANCING // MARTIAL ARTS </strong></h2>
+                    
+                      <a href="#about-section">  
+                      <i style=" text-shadow: 2px 2px #ada2a2;font-size: 250%"" class="fa fa-angle-double-down fa-5x down-icon a animated infinite bounce"></i> </a>
+                    </div>
+
+
                 </div>
             </div>
            
@@ -79,22 +87,22 @@
       <!--END HEADER SECTION -->
 
  <!--ABOUT SECTION -->
-    <div id="about-section" >
+    <div id="about-section">
         <div class="container" >
             <div class="row main-top-margin text-center">
                 <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
                     <h1 style = "color:#eaca21"> Who Are We? </h1>
-                    <h4>
+                    <h4 >
                        <strong>We Are The Yi Quin Lion Dance Club</strong>  
                        <br/> 
-                       - The South Coasts Premier Chinese Lion Dance Group - 
+                       The South Coasts Premier Chinese Lion Dance Group 
                     </h4>
                 </div>
             
             </div>
             <!-- ./ Main Heading-->
             <div class="row main-low-margin text-center">
-                <div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
+                <div class="col-md-4" data-scrollreveal="enter left and move 100px, wait 0.4s">
                     <img  class="img-rounded" width="100%" height="100%" src="assets/img/10.jpg" alt="">
                     <h4><strong>Follow Us</strong> </h4>
                    
@@ -109,7 +117,7 @@
 
                 </div>
              
-                <div class="col-md-7 col-sm-7 col-md-offset-1  text-justify" data-scrollreveal="enter right and move 100px, wait 0.4s">
+                <div class="col-md-7 col-sm-12 col-md-offset-1  text-justify" data-scrollreveal="enter right and move 100px, wait 0.4s">
             
                     <p>
                          Our main base is the South coast, which includes Southampton, Portsmouth &amp; Bournemouth, but we have also taken the Yi Quin performances to Brighton, Bristol, London, Isle of Wight, Cardiff, Ireland and even as far as Hong Kong.
@@ -123,6 +131,10 @@
                         We are available for any type of occasion, such as Weddings, Restaurant Openings, Birthdays, Hen Nights etc.
                     </p>
 
+                    <p>
+                    We welcome any person who is interested in learning the art of Chinese Lion Dancing. If you think this is you and you would like to join the group, then please keep an eye on our Facebook events page for information on training days and performance dates.
+                    </p>
+
                 </div>
             </div>
               <!-- ./ Row Content-->
@@ -130,7 +142,28 @@
     </div>
     <!-- END ABOUT SECTION -->
 
+<!-- START GALLERY SECTION -->
+<div class="container" data-scrollreveal="enter top and move 100px, wait 0.3s">
+  <h1 id="gallery-section" style = "color:#eaca21"> Gallery </h1>
 
+  <img class="mySlides" src="assets\img\5.jpg" style="width:100%">
+  <img class="mySlides" src="assets\img\7.jpg" style="width:100%">
+  <img class="mySlides" src="assets\img\8.jpg" style="width:100%">
+
+  <div class="row">
+    <div class="col-sm-4 col-xs-4">
+      <img class="gallery-thumbnail" src="assets\img\5.jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="col-sm-4 col-xs-4">
+      <img class="gallery-thumbnail" src="assets\img\7.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="col-sm-4 col-xs-4">
+      <img class="gallery-thumbnail" src="assets\img\8.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+<!-- END GALLERY SECTION -->
 
 <!--CONTACT SECTION -->
     <div id="contact-section">
@@ -146,9 +179,9 @@
             <!-- ./ Main Heading-->
             
                     <div class="container" data-scrollreveal="enter right and move 100px, wait 0.4s">
-                        <h3>Drop a Line or Hire Me </h3>
+                        <h3>Contact Us </h3>
                         <hr />
-                        <form>
+                        <form action="MAILTO:alexchiu11@gmail.com" method="post" enctype="text/plain">
                             <div class="row">
                                 <div class="col-md-6 ">
                                     <div class="form-group">
@@ -218,5 +251,33 @@
     <script src="assets/js/custom2.js"></script>
 
 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-border-red", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-border-red";
+}
+</script>
 
 </body>

@@ -1,13 +1,3 @@
-/*=============================================================
-    Authour URI: www.binarytheme.com
-    License: Commons Attribution 3.0
-
-    http://creativecommons.org/licenses/by/3.0/
-
-    100% To use For Personal And Commercial Use.
-    IN EXCHANGE JUST GIVE US CREDITS AND TELL YOUR FRIENDS ABOUT US
-   
-    ========================================================  */
 /* ===========================================================
    GENERAL STYLES   
    ============================================================*/
@@ -156,6 +146,19 @@ p {
 .color-instagram {
      color:#cb2027;
 }
+
+/* ==========================================================================
+   GALLERY SECTION
+   ========================================================================== */
+
+.gallery-thumbnail{
+	padding-top: 3%;
+	 }
+.gallery-thumbnail:hover{
+	 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+
 /* ===========================================================
    BOOTSTRAP ELEMENTS CHANGES   
    ============================================================*/

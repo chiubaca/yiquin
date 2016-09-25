@@ -241,14 +241,12 @@
                     </p>    
                     </h4>
                 </div>
-            </div><!-- ./ Main Heading-->
-            <!-- ./ Row Content-->
-  
+            </div>
 
+
+  <!--NEW CONTACT START -->
 
 <form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);">
-
-
 <input name="skip_WhereToSend" type="hidden" value="alexchiu11@gmail.com" />
 <input name="skip_SnapHostID" type="hidden" value="9HWF6DU8C5UJ" />
 <input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
@@ -256,10 +254,44 @@
 <input name="skip_ShowUsersIp" type="hidden" value="1" />
 <input name="skip_SendCopyToUser" type="hidden" value="1" />
 
+
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = obj.src;
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+
  <div id="contact-section">
-    <div class="container col-md-8 col-md-offset-2" data-scrollreveal=
-                "enter top and move 100px, wait 0.3s row main-top-margin text-center">
-       
+    <div class="container">
+        <div class="row main-top-margin text-center">
+            <div class="col-md-8 col-md-offset-2" data-scrollreveal=
+                "enter top and move 100px, wait 0.3s">
+
+
+
+
+    <i>Enter web form code*:</i>
+<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+</td><td>
+<a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+style="margin-left:20px;"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=9HWF6DU8C5UJ&ImgType=2" /></a><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+</table> <br />
+
+
 <div class="form-group">
     <input name="Name" maxlength="60" class="form-control" placeholder="Name" required="required" type="text">
 </div>
@@ -279,22 +311,14 @@
 
 * - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 <input name="skip_Submit" type="submit" value="Submit" />
-
+</td></tr>
+</table><br />
 </div>
         </div>
             </div>
 </form>
 
-<i>Enter web form code*:</i>
-<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
-</td><td>
-<a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
-style="margin-left:20px;"
-src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=9HWF6DU8C5UJ&ImgType=2" /></a><br />
-<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a>
-
-
-<!--
+    <!--
 <table border="0" cellpadding="5" cellspacing="0" width="600">
 <tr>
 <td><b>Name*:</b></td>
@@ -315,13 +339,11 @@ src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=9HWF6DU8C5UJ&ImgType=2
 <tr><td colspan="2" style="padding-bottom:18px;">
 </td></tr>
 <tr valign="top"><td> 
-    -->   
+    -->
 
-  <!--END CONTACT SECTION -->
-
-
-
-
+<!--NEW CONTACT END -->
+            
+    
     <!--FOOTER SECTION -->
     <div id="footer">
         <div class="container">
@@ -329,6 +351,7 @@ src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=9HWF6DU8C5UJ&ImgType=2
                 &copy; 2016 www.yiquinlion.co.uk | All Right Reserved
             </div>
         </div>
+    </div>
         
         <!--END FOOTER SECTION -->
         
@@ -355,26 +378,6 @@ src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=9HWF6DU8C5UJ&ImgType=2
         <script>
     window.addEventListener("hashchange", function() { scrollBy(0, -50) })
         </script>
-
-
- <!-- Contact form scripts -->
-<script type="text/javascript">
-function ValidateForm(frm) {
-if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
-if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
-if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
-if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
-if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
-return true; }
-function ReloadCaptchaImage(captchaImageId) {
-var obj = document.getElementById(captchaImageId);
-var src = obj.src;
-var date = new Date();
-var pos = src.indexOf('&rad=');
-if (pos >= 0) { src = src.substr(0, pos); }
-obj.src = src + '&rad=' + date.getTime();
-return false; }
-</script>
 
 </body>
 </html>

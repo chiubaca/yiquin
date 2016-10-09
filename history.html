@@ -10,7 +10,7 @@
     <meta content="" name="Yi Quin Lion Dance Website">
     <meta content="" name="Alex Chiu">
 
-    <title>Yi Quin Lion Dance</title>
+    <title>History</title>
     <link href="assets\img\YQ-favicon.ico" rel="shortcut icon" type="image/png">
 
     <!--GOOGLE FONT -->
@@ -23,7 +23,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
 
     <!--Animate STYLE -->
-    <link href="assets/css/animate.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet"> 
 
     <!--History STYLE -->
     <link href="assets/css/history.css" rel="stylesheet">
@@ -80,8 +80,7 @@
                         <br>
                         <h2 style=
                         " text-shadow: 2px 2px #ada2a2;font-size: 200%">
-                        <strong>LION DANCING // MARTIAL
-                        ARTS</strong></h2><a href="#about-section"><i class=
+                        <strong>YI QUIN // HISTORY</strong></h2><a href="#about-section"><i class=
                         "fa fa-angle-double-down fa-5x down-icon a animated infinite bounce"
                         style=
                         " text-shadow: 2px 2px #ada2a2;font-size: 250%"></i></a>
@@ -98,8 +97,11 @@
     <br/>
 
     <div class="container">
-        <button class="accordion show active" style="font-size:large"><b>How the story began…</b></button>
-        <div class="panel animated pulse show">
+        
+    <div id="beginings">
+        <button id="beginings" class="accordion show active" href="history.html#beginings" style = "background-color:#rgba(202, 123, 49, 0.87);"
+        " >How The Story Began</a></button>
+        <div  class="panel animated pulse show">
             <p>Yi Quin was born out of an idea from 5 friends in the early eighties, they all had a passion for Chinese lion
                 dancing but had no outlet for this. This is when it was decided to start a club in Southampton as there were
                 no other groups locally. This gave us the title of the first lion dance club on the south coast.
@@ -116,9 +118,13 @@
                 <br/>
                 <br/> We are available all year round for any manor of events with Chinese New Year being our busiest time.</p>
         </div>
+    </div>    
 
-        <button class="accordion"><strong>History of Lion Dance</strong></button>
-        <div class="panel animated pulse">
+    <div href="history.html#now">
+        <button id="now" class="accordion">
+            <a >History of Yi Quin</a>
+            </button>
+        <div id="now" class="panel animated pulse">
             <p>
 
                 Chinese Lion Dance is an important part of the rich cultural heritage of the Chinese people all over the world. A tradition
@@ -151,10 +157,30 @@
                 Goddess of mercy, Kwan Yin, felt sorry for the lion and repaired his horn with a red ribbon and gave him
                 a mirror to ward off evil – these can still be seen on modern day Lions.</p>
         </div>
-
+    </div>
 
 
     </div>
+
+ <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+        <!-- CORE JQUERY LIBRARY -->
+        <script src="assets/js/jquery.js">
+        </script> 
+        
+        <!-- CORE BOOTSTRAP LIBRARY -->
+        <script src="assets/js/bootstrap.min.js">
+        </script> 
+        
+        <!-- SCROLL REVEL LIBRARY FOR SCROLLING ANIMATIONS-->
+        <script src="assets/js/scrollReveal.js">
+        </script> 
+
+        <!-- CUSTOM SCRIPT-->
+        <script src="assets/js/custom.js">
+        </script> 
+      
+     
+
 
     <script>
     /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */

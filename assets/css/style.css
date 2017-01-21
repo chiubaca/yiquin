@@ -207,3 +207,16 @@ color: #FFFFFF;
     text-align: right; 
     padding: 10px 30px 10px 30px;
 }
+
+.enter-code{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+input[name="skip_CaptchaCode"]{
+width:20%;
+
+}
+
